@@ -23,6 +23,11 @@
     height: auto;
 }
 
+.band-members img {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
 .container {
   display: flex; 
   height: 100px; 
