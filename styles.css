@@ -1,6 +1,8 @@
 :root {
     --border-color: #000000;
     --light_bg_color: #eeeeee;
+    --dark_bg_color: #00095d;
+    --light_txt_color: #cccccc;
 }
 
 @font-face {
@@ -16,8 +18,8 @@
 
 .band-members div {
     display: inline-block;
-    width: 500px;
-    min-height: 50px;
+    width: 20%;
+    min-height: fit-content;
     background-color: var(--light_bg_color);
     height: auto;
 }
@@ -32,10 +34,9 @@
 .floating{
     float:left;
     width:20%;
-    background:red;
+    background: var(--light_bg_color);
     height:200px;
 }
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -124,5 +125,6 @@
 }
 
 .footer {
-  background-color: #000000;
+  background-color: var(--dark_bg_color);
+  color: var(--border-color);
 }
