@@ -16,7 +16,9 @@
 }
 
 .band_member {
-  display: table-cell;
+    width:20%;
+    
+    display: table-cell;
     background-color: var(--light_bg_color);
     height: auto;
 }
