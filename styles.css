@@ -15,17 +15,16 @@
     box-sizing:border-box;
 }
 
-.band-members div {
-    display: inline-block;
-    width: 20%;
-    min-height: fit-content;
+.band_member {
+  display: table-cell;
     background-color: var(--light_bg_color);
     height: auto;
 }
 
-.band-members img {
+.band-image {
   max-width: fit-content;
   max-height: fit-content;
+  align-items: center;
 }
 
 .container {
@@ -41,8 +40,6 @@
     width: 20%;
     height: 20%;
 }
-
-
 
 .floating{
     float:left;
