@@ -14,24 +14,34 @@
 <body>
     <!-- Navigation (Stays on Top) -->
     <div class="w3-top w3-bar w3-black">
-        <a href="#home" class="w3-bar-item w3-button">Home</a>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#music" class="w3-bar-item w3-button">Music</a>
-        <a href="#members" class="w3-bar-item w3-button">Members</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <a href="index.html" class="w3-bar-item w3-button">Home</a>
+        <a href="index.html#about" class="w3-bar-item w3-button">About</a>
+        <a href="index.html#music" class="w3-bar-item w3-button">Music</a>
+        <a href="index.html#members" class="w3-bar-item w3-button">Members</a>
+        <a href="index.html#contact" class="w3-bar-item w3-button">Contact</a>
+        <div class="dropdown">
+            <button onclick="dropdown_box()" class="dropbtn">Dropdown</button>
+            <div id="nav_dropdown_box" class="dropdown-content">
+                <a href="resources/playlists.html">Spotify Playlists</a>
+                <a href="resources/music_scores.html">Drive Links</a>
+            </div>
+        </div>
+        <div class="dev_button">
+            <a href="site_map.html">Site Map</a>
+        </div>
     </div>
     <br><br><br><br><br>
-<div id="Navigation">
-   🗃️ <a href="/index.html">Home</a><br>
-    ┃<br>
-    ┠─ 📁 RESOURCES<br>
-    ┃   │<br>
-    ┃   ├─ 📁 <a href="/resources/music_scores.html">Music Scores</a><br>
-    ┃   │<br>
-    ┃   └─ 📁 <a href="/resources/playlists.html">Playlists</a><br>
-    ┃<br>
-    📂 Site Directory<br><br><br><br><br>
-</div>
+    <div id="Navigation">
+        🗃️ <a href="/index.html">Home</a><br>
+        ┃<br>
+        ┠─ 📁 RESOURCES<br>
+        ┃ │<br>
+        ┃ ├─ 📁 <a href="/resources/music_scores.html">Music Scores</a><br>
+        ┃ │<br>
+        ┃ └─ 📁 <a href="/resources/playlists.html">Playlists</a><br>
+        ┃<br>
+        📂 Site Directory<br><br><br><br><br>
+    </div>
 </body>
 
 </html>
