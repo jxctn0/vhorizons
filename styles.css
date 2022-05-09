@@ -147,7 +147,8 @@
 
 .footer {
   background-color: var(--dark_bg_color);
-  color: var(--border-color);
+  color: var(--light_txt_color);
+  text-align: center;
 }
 
 .dropbtn {
