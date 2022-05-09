@@ -25,8 +25,8 @@
 }
 
 .band-image {
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 17%;
+  max-height: 17%;
   align-items: center;
 }
 
