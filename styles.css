@@ -1,0 +1,50 @@
+.bar-top,
+.bar-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.bar-top {
+    top: 0
+}
+
+.bar-bottom {
+    bottom: 0
+}
+
+
+.navbar {
+    width: 100%;
+    overflow: hidden
+}
+
+.center .navbar {
+    display: inline-block;
+    width: auto
+}
+
+.navbar.navbar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.navbar.w3-dropdown-hover,
+.navbar.w3-dropdown-click {
+    position: static;
+    float: left
+}
+
+.navbar.button {
+    white-space: normal
+}
+
+.color-black,
+.w3-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important
+}
