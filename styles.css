@@ -1,3 +1,19 @@
+:root {
+    /**/
+    --light_bg: #ffffff;
+    --dark_bg: #00000a;
+    
+
+}
+
+.page_dark_bg {
+    background-color: var(--dark_bg);
+}
+.page_light_bg {
+    background-color: var(--light_bg);
+
+}
+
 .bar-top,
 .bar-bottom {
     position: fixed;
@@ -48,3 +64,23 @@
     color: #fff !important;
     background-color: #000 !important
 }
+
+.fifth{
+    width: 20%
+}
+
+.instruments {
+    font-style: italic;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }

@@ -26,10 +26,11 @@
 <body>
 
     <!-- Navbar -->
-    <div class="bar-top"> <!--bar-top-->
+    <div id="navbar" class="bar-top">
+        <!--bar-top-->
         <div class="navbar w3-black w3-card">
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
-                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                href="javascript:void(0)" onclick="navbar()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
             <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
@@ -50,10 +51,10 @@
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+        <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="navbar()">BAND</a>
+        <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="navbar()">TOUR</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="navbar()">CONTACT</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="navbar()">MERCH</a>
     </div>
 
     <!-- Page content -->
@@ -115,73 +116,53 @@
         <!-- The Tour Section -->
         <div class="w3-black" id="tour">
             <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-                <h2 class="w3-wide w3-center">TOUR DATES</h2>
-                <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-                <ul class="w3-ul w3-border w3-white w3-text-grey">
-                    <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-                    <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-                    <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-                </ul>
+                <h2 class="w3-wide w3-center">Meet the Band</h2><br>
 
                 <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+                    <div class="fifth w3-margin-bottom">
+                        <img src="/images/red_600x600.png" alt="RED" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
-                            <p><b>New York</b></p>
-                            <p class="w3-opacity">Fri 27 Nov 2016</p>
+                            <p><b>RED</b></p>
+                            <p class="w3-opacity instruments">Bass, Vocals</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
+
                         </div>
                     </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+                    <div class="fifth w3-margin-bottom">
+                        <img src="/images/yellow_600x600.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
                         <div class="w3-container w3-white">
                             <p><b>Paris</b></p>
                             <p class="w3-opacity">Sat 28 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
                         </div>
                     </div>
-                    <div class="w3-third w3-margin-bottom">
-                        <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%"
+                    <div class="fifth w3-margin-bottom">
+                        <img src="/images/green_600x600.png" alt="San Francisco" style="width:100%"
                             class="w3-hover-opacity">
                         <div class="w3-container w3-white">
                             <p><b>San Francisco</b></p>
                             <p class="w3-opacity">Sun 29 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom"
-                                onclick="document.getElementById('ticketModal').style.display='block'">Buy
-                                Tickets</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Ticket Modal -->
-        <div id="ticketModal" class="w3-modal">
-            <div class="w3-modal-content w3-animate-top w3-card-4">
-                <header class="w3-container w3-teal w3-center w3-padding-32">
-                    <span onclick="document.getElementById('ticketModal').style.display='none'"
-                        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-                </header>
-                <div class="w3-container">
-                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="How many?">
-                    <p><label><i class="fa fa-user"></i> Send To</label></p>
-                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                    <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i
-                            class="fa fa-check"></i></button>
-                    <button class="w3-button w3-red w3-section"
-                        onclick="document.getElementById('ticketModal').style.display='none'">Close <i
-                            class="fa fa-remove"></i></button>
-                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                    <div class="fifth w3-margin-bottom">
+                        <img src="/images/blue_600x600.png" alt="San Francisco" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>San Francisco</b></p>
+                            <p class="w3-opacity">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        </div>
+                    </div>
+                    <div class="fifth w3-margin-bottom">
+                        <img src="/images/pink_600x600.png" alt="San Francisco" style="width:100%"
+                            class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>San Francisco</b></p>
+                            <p class="w3-opacity">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +173,8 @@
             <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
             <div class="w3-row w3-padding-32">
                 <div class="w3-col m6 w3-large w3-margin-bottom w3-center">
-                    <a href="mailto:jdcotugno006@gmail.com"><i class="fa fa-envelope" style="width:30px"> </i> Email: jdcotugno006@gmail.com</a><br>
+                    <a href="mailto:jdcotugno006@gmail.com"><i class="fa fa-envelope" style="width:30px"> </i> Email:
+                        jdcotugno006@gmail.com</a><br>
                 </div>
             </div>
         </div>
@@ -229,7 +211,7 @@
         }
 
         // Used to toggle the menu on small screens when clicking on the menu button
-        function myFunction() {
+        function navbar() {
             var x = document.getElementById("navDemo");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
@@ -245,6 +227,24 @@
                 modal.style.display = "none";
             }
         }
+
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { sticky_navbar() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function sticky_navbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+
     </script>
 
 </body>
