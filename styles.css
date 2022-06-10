@@ -68,29 +68,29 @@ h1 {
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: darkcyan;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
     background-color: lightblue;
     color: white;
-  }
+}
 
 .instrument {
     font-family: 'Josefin Sans', sans-serif;
@@ -101,6 +101,7 @@ h1 {
 .slideshow-container {
     position: relative
 }
+
 .slideshow-container:hover {
     display: block
 }
@@ -110,3 +111,17 @@ h1 {
     width: auto
 }
 
+.display-bottommiddle {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%)
+}
+
+
+.w3-center {
+    text-align: center !important;
+    display: inline-block;
+    width: auto
+}
