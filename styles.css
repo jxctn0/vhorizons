@@ -57,6 +57,12 @@ a {
     height: 60px;
 }
 
+h1 {
+    letter-spacing: 3px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
