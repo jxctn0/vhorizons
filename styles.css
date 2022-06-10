@@ -59,8 +59,9 @@ a {
 
 h1 {
     letter-spacing: 3px;
-    font-size: xx-large;
+    font-size: 300px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Add a black background color to the top navigation */
