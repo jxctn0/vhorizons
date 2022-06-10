@@ -1,96 +1,76 @@
-:root {
-    /**/
-    --light_bg: #ffffff;
-    --dark_bg: #00000a;
-
-
+* {
+    font-family: 'Joan', serif;
+    background-color: black;
+    color: white;
 }
 
-.page_dark_bg {
-    background-color: var(--dark_bg);
-}
-
-.page_light_bg {
-    background-color: var(--light_bg);
-
-}
-
-.bar-top,
-.bar-bottom {
-    position: fixed;
+table#band {
     width: 100%;
-    z-index: 1
+    border: none;
+    fill: white
 }
 
-.bar-top {
-    top: 0
+table#band,
+th,
+td {
+    border: none;
+    border-collapse: collapse;
 }
 
-.bar-bottom {
-    bottom: 0
+th {
+    border-radius: 10pxw;
 }
 
+td.band_member img {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
+    height: 180px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+    font-style: normal;
+}
+
+.member-column {
+    background-color: white;
+}
 
 .navbar {
+    background-color: lightseagreen;
     width: 100%;
-    overflow: hidden
 }
 
-.center .navbar {
+.instrument {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    color: #ababab;
+}
+
+.slideshow-container {
+    position: relative
+}
+.slideshow-container:hover {
+    display: block
+}
+
+.slideshow-center .w3-bar {
     display: inline-block;
     width: auto
 }
 
-.navbar.navbar-item {
-    padding: 8px 16px;
-    float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0
-}
-
-.navbar.w3-dropdown-hover,
-.navbar.w3-dropdown-click {
-    position: static;
-    float: left
-}
-
-.navbar.button {
-    white-space: normal
-}
-
-.color-black,
-.w3-hover-black:hover {
-    color: #fff !important;
-    background-color: #000 !important
-}
-
-.fifth {
-    width: 20%
-}
-
-.instruments {
-    font-style: italic;
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-    padding-top: 60px;
-}
-
-.bandmember_container{
-    width:20%;
-    display: table-cell;
-}
-
-.bandmember_cell{
-    padding: 5px;
-}

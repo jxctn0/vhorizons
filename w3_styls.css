@@ -546,7 +546,7 @@ a {
 .w3-modal {
     z-index: 3;
     display: none;
-    padding-top: 100px; 
+    padding-top: 100px;
     position: fixed;
     left: 0;
     top: 0;
