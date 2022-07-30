@@ -2,173 +2,214 @@
 <html dir="ltr" lang="en">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vth Horizon</title>
 </head>
 
 <body>
-  <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#band">The Band</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-
-  <br><br>
-  <div class="whitebg">
-    <h1>
-      V • HORIZONS
-    </h1>
-  </div>
-
-  <div class="mySlides slideshow-container slideshow-center">
-    <img src="images/blue_2048x1024.png" style="width:100%">
-    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Blue</h3>
-      <p><b>Blue Test image</b></p>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#band">The Band</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
     </div>
-  </div>
-  <div class="mySlides slideshow-container w3-display-container w3-center">
-    <img src="images/green_2048x1024.png" style="width:100%">
-    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Green</h3>
-      <p><b>Green Test Image</b></p>
+
+    <br><br>
+    <div class="whitebg">
+        <h1>
+            V<sup>th</sup> HORIZON
+        </h1>
     </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="images/red_2048x1024.png" style="width:100%">
-    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Red</h3>
-      <p><b>Red test image.</b></p>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images\red_2048x1024.png" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images\yellow_2048x1024.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images\green_2048x1024.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images\blue_2048x1024.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images\pink_2048x1024.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-  </div>
-  <br>
-  <br>
-  <br>
+    <br>
 
-  <table id="band">
-    <tr>
-      <th class="member-column">
-        Joshua
-      </th>
-      <th>
-        &nbsp;
-      </th>
-      <th class="member-column">
-        Chloe
-      </th>
-      <th>
-        &nbsp;
-      </th>
-      <th class="member-column">
-        Rynn
-      </th>
-      <th>
-        &nbsp;
-      </th>
-      <th class="member-column">
-        Pippa
-      </th>
-      <th>
-        &nbsp;
-      </th>
-      <th class="member-column">
-        Lauren
-      </th>
-    </tr>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    <br>
+    <br>
+    <br>
 
-    <tr>
-      <td class="band_member member-column">
-        <img src="/images/joshua_600x600.png">
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="band_member member-column">
-        <img src="/images/chloe_600x600.png">
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="band_member member-column">
-        <img src="/images/emrynn_600x600.png">
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="band_member member-column">
-        <img src="/images/pippa_600x600.png">
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="band_member member-column">
-        <img src="/images/lauren_600x600.png">
-      </td>
-    </tr>
-    <tr>
-      <td class="instrument member-column">
-        Guitar, Bass, Ukulele, Voice
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="instrument member-column">
-        Piano, Synth, Bassoon
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="instrument member-column">
-        Voice, Guitar
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="instrument member-column">
-        Bass, Voice
-      </td>
-      <td>
-        &nbsp;
-      </td>
-      <td class="instrument member-column">
-        Drums, Ukulele, Guitar
-      </td>
-    </tr>
-  </table>
+    <table id="band">
+        <tr>
+            <th class="member-column">
+                Joshua
+            </th>
+            <th>
+                &nbsp;
+            </th>
+            <th class="member-column">
+                Chloe
+            </th>
+            <th>
+                &nbsp;
+            </th>
+            <th class="member-column">
+                Rynn
+            </th>
+            <th>
+                &nbsp;
+            </th>
+            <th class="member-column">
+                Pippa
+            </th>
+            <th>
+                &nbsp;
+            </th>
+            <th class="member-column">
+                Lauren
+            </th>
+        </tr>
 
-  <br>
-  <br>
-  <div id="contact">
-    <h2>Contact Us:</h2>
-    <p1>
-      <a href="https://www.instagram.com/vthhorizon/" target="_blank"><i class="fa fa-instagram"
-          aria-hidden="true"></i>@vthhorizon</a>
-    </p1>
-  </div>
-  <br>
-  <br>
-  <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
+        <tr>
+            <td class="band_member member-column">
+                <img src="VTHHORIZON/images/joshua_600x600.png">
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="band_member member-column">
+                <img src="VTHHORIZON/images/chloe_600x600.png">
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="band_member member-column">
+                <img src="VTHHORIZON/images/emrynn_600x600.png">
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="band_member member-column">
+                <img src="VTHHORIZON/images/pippa_600x600.png">
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="band_member member-column">
+                <img src="VTHHORIZON/images/lauren_600x600.png">
+            </td>
+        </tr>
+        <tr>
+            <td class="instrument member-column">
+                Guitar, Bass, Ukulele, Voice
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="instrument member-column">
+                Piano, Synth, Bassoon
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="instrument member-column">
+                Voice, Guitar
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="instrument member-column">
+                Bass, Voice
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td class="instrument member-column">
+                Drums, Ukulele, Guitar
+            </td>
+        </tr>
+    </table>
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 4000);
-    }
+    <br>
+    <br>
+    <div id="contact">
+        <h2>Contact Us:</h2>
+        <p1>
+            <a href="https://www.instagram.com/vthhorizon/" target="_blank"><i class="fa fa-instagram"
+                    aria-hidden="true"></i>@vthhorizon</a>
+        </p1>
+    </div>
+    <br>
+    <br>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-  </script>
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
 </body>
 
 </html>
