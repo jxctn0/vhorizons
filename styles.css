@@ -7,7 +7,9 @@
 table#band {
     width: 100%;
     border: none;
-    fill: white
+    fill: white;
+    align-items: center;
+    text-align: center;
 }
 
 table#band,

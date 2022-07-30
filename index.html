@@ -1,6 +1,167 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Removed</h1>
-  </body>
+<html dir="ltr" lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+
+  <br><br>
+  <div class="whitebg">
+    <h1>
+      V • HORIZONS
+    </h1>
+  </div>
+
+  <div class="mySlides slideshow-container slideshow-center">
+    <img src="images/blue_2048x1024.png" style="width:100%">
+    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Blue</h3>
+      <p><b>Blue Test image</b></p>
+    </div>
+  </div>
+  <div class="mySlides slideshow-container w3-display-container w3-center">
+    <img src="images/green_2048x1024.png" style="width:100%">
+    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Green</h3>
+      <p><b>Green Test Image</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/red_2048x1024.png" style="width:100%">
+    <div class="display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Red</h3>
+      <p><b>Red test image.</b></p>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <table id="band">
+    <tr>
+      <th class="member-column">
+        Joshua
+      </th>
+      <th>
+        &nbsp;
+      </th>
+      <th class="member-column">
+        Chloe
+      </th>
+      <th>
+        &nbsp;
+      </th>
+      <th class="member-column">
+        Rynn
+      </th>
+      <th>
+        &nbsp;
+      </th>
+      <th class="member-column">
+        Pippa
+      </th>
+      <th>
+        &nbsp;
+      </th>
+      <th class="member-column">
+        Lauren
+      </th>
+    </tr>
+
+    <tr>
+      <td class="band_member member-column">
+        <img src="/images/joshua_600x600.png">
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="band_member member-column">
+        <img src="/images/chloe_600x600.png">
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="band_member member-column">
+        <img src="/images/emrynn_600x600.png">
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="band_member member-column">
+        <img src="/images/pippa_600x600.png">
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="band_member member-column">
+        <img src="/images/lauren_600x600.png">
+      </td>
+    </tr>
+    <tr>
+      <td class="instrument member-column">
+        Guitar, Bass, Ukulele, Voice
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="instrument member-column">
+        Piano, Synth, Bassoon
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="instrument member-column">
+        Voice, Guitar
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="instrument member-column">
+        Bass, Voice
+      </td>
+      <td>
+        &nbsp;
+      </td>
+      <td class="instrument member-column">
+        Drums, Ukulele, Guitar
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+  </script>
+</body>
+
 </html>
